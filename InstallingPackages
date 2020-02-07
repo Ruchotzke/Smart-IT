@@ -1,0 +1,27 @@
+This text document holds the commands needed to install the required packages
+for the voice assistant API.
+
+First, Try to run the shell script. This should attempt to install
+every dependency automatically. In your terminal, navigate to the script and
+run
+	
+	chmod u+x Dependencies.sh
+	./Dependencies.sh
+
+If everything works, you should be able to run the test script
+"TestDependencies.py" without any issues.
+
+To install everything manually, run the following commands
+
+1)pip install speech_recognition
+2)pip install gtts
+3)sudo apt-get install python-pyaudio
+4)pip install playsound
+
+Once done, try running the python program: TestPackages.py
+If it runs and outputs an error about a missing package,
+try installing that package again. If you have trouble post
+to slack!
+
+The output should be:
+	"Successfully loaded all dependencies."
